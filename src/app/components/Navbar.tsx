@@ -18,10 +18,6 @@ export default function Navbar() {
         {
             name: "Cart",
             url: "/cart"
-        },
-        {
-            name: "Todo",
-            url: "/todo"
         }
     ]
 
