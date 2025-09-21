@@ -1,0 +1,25 @@
+export type Todo = {
+  id: number;
+  task: string;
+  done: boolean;
+};
+
+export type item = {
+        id: number
+        title: string
+        price: number
+        description: string
+        category: string
+        image: string
+        rating: {
+            rate: number
+            count: number
+        }
+        quantity?: number
+    }
+
+export type BuyButtonProps = {
+    props: {
+        id: number
+    }
+}
