@@ -65,7 +65,6 @@ export default function CartPage() {
                                         <td>{item.description.slice(0, 20)}...</td>
                                         <td>{item.rating.rate}</td>
                                         <td><RemoveButton item={item} /></td>
-
                                     </tr>
                                 ))
                             }

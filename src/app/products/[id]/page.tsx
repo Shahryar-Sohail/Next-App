@@ -1,7 +1,6 @@
 import BackButton from "@/app/components/BackButton"
 import BuyButton from "@/app/components/BuyButton"
 import Image from "next/image"
-import { item } from "@/app/types"
 
 type Props = {
   params: Promise<{ id: string }>

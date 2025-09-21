@@ -1,8 +1,9 @@
-import { addTodo} from "./actions";
+import { addTodo } from "./actions";
 import { Todo } from "@/app/types";
 
 export default async function TodosPage() {
-    const todos: Todo[] = await fetch("http://localhost:3000/api/todo").then((res) =>
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+    const todos: Todo[] = await fetch(`${baseUrl}/api/todo`).then((res) =>
         res.json()
     );
 
@@ -17,7 +18,7 @@ export default async function TodosPage() {
                         className={"p-3 rounded bg-red-200"}
                     >
                         {todo.task}
-                        
+
                     </li>
                 ))}
             </ul>
